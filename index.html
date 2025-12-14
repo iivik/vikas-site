@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Anand | AI Strategist & Evangelist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        bg: '#0B0F19',
+                        card: '#121623',
+                        accent: '#6366f1', 
+                        text: '#E2E8F0',
+                        muted: '#94A3B8'
+                    },
+                    backgroundImage: {
+                        'hero-glow': 'radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0B0F19; color: #E2E8F0; }
+        
+        .bg-mesh {
+            background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.1) 0px, transparent 50%),
+                              radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.1) 0px, transparent 50%);
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+        }
+
+        .text-glow {
+            background: linear-gradient(to right, #ffffff 20%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(165, 180, 252, 0.2);
+        }
+
+        .glass-card {
+            background: rgba(18, 22, 35, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="antialiased scroll-smooth">
+
+    <div class="bg-mesh"></div>
+
+    <nav class="flex justify-between items-center max-w-6xl mx-auto px-6 py-8 relative z-10">
+        <div class="text-xl font-bold tracking-tight text-white">Vikas Anand<span class="text-accent">.</span></div>
+        <div class="flex gap-6 items-center">
+            <a href="https://twitter.com/_ivik" target="_blank" class="text-muted hover:text-white transition w-5 h-5">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/>
+                </svg>
+            </a>
+            <a href="https://linkedin.com/in/vikas-anand" target="_blank" class="text-muted hover:text-white transition w-5 h-5">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 mt-20 mb-24 relative z-10">
+        <div class="max-w-4xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 mb-8 text-xs font-bold tracking-widest text-accent uppercase bg-accent/5 rounded-full border border-accent/20 shadow-[0_0_15px_rgba(99,102,241,0.2)]">
+                <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                Strategic AI Leadership
+            </div>
+            
+            <h1 class="text-6xl md:text-8xl font-black tracking-tight leading-[0.95] mb-8">
+                OWN THE AI GRID.<br>
+                <span class="text-glow">RENT THE POWER.</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-muted leading-relaxed max-w-3xl mb-12 font-light">
+                <strong class="text-white font-semibold">Chief Evangelist. VP, Growth & Partnerships.</strong><br>
+                Generative AI Strategist. 25+ years bridging the gap between technical capability and commercial reality. I build GTM ecosystems that survive the hype cycles.
+            </p>
+            
+            <div class="flex flex-wrap gap-4">
+                <a href="#insights" class="px-8 py-4 bg-white text-bg font-bold rounded-lg hover:bg-gray-200 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                    Explore Insights
+                </a>
+                <a href="mailto:sakivva@gmail.com" class="px-8 py-4 border border-white/10 bg-white/5 text-white font-medium rounded-lg hover:bg-white/10 hover:border-white/30 transition backdrop-blur-sm flex items-center gap-2">
+                    Get in Touch <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <section class="border-y border-white/5 bg-white/[0.02] backdrop-blur-sm py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-xs text-muted uppercase tracking-widest font-bold mb-8 opacity-60">Leadership Trajectory (Prior Roles)</p>
+            <div class="flex flex-wrap justify-between items-center gap-4 w-full opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <span class="text-xl md:text-2xl font-bold text-white tracking-tight">Botminds AI</span>
+                <span class="text-xl md:text-2xl font-bold text-white tracking-tight">Blue Prism</span>
+                <span class="text-xl md:text-2xl font-bold text-white tracking-tight">EdgeVerve</span>
+                <span class="text-xl md:text-2xl font-bold text-white tracking-tight">Infosys</span>
+                <span class="text-xl md:text-2xl font-bold text-white tracking-tight">HCL</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-24 mb-24">
+        <div class="max-w-6xl mx-auto px-6 mb-8 flex justify-between items-end">
+            <h2 class="text-3xl font-bold text-white border-l-4 border-accent pl-4">Speaking & Media</h2>
+            
+            <div class="flex gap-2">
+                <button onclick="scrollCarousel(-1)" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition text-white hover:text-accent"><i class="fa-solid fa-chevron-left"></i></button>
+                <button onclick="scrollCarousel(1)" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition text-white hover:text-accent"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        
+        <div id="carousel" class="flex gap-6 overflow-x-auto no-scrollbar px-6 max-w-[100vw] md:max-w-6xl md:mx-auto scroll-smooth snap-x snap-mandatory">
+            
+            <a href="LINK_TO_PODCAST" target="_blank" class="flex-none w-[350px] snap-center glass-card rounded-xl overflow-hidden group">
+                <div class="h-48 bg-gray-800 relative">
+                    <img src="assets/talk1.jpg" alt="DealTalk Podcast" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/40"><i class="fa-solid fa-play text-white text-3xl"></i></div>
+                </div>
+                <div class="p-5">
+                    <div class="text-xs font-bold text-accent uppercase mb-2">Podcast</div>
+                    <h3 class="text-lg font-bold text-white leading-tight">DealTalk: Cold RFPs to Wins</h3>
+                    <p class="text-sm text-muted mt-2">Conversation with Dr. Ryan O'Sullivan on Relationship Selling.</p>
+                </div>
+            </a>
+
+            <a href="LINK_TO_POST" target="_blank" class="flex-none w-[350px] snap-center glass-card rounded-xl overflow-hidden group">
+                <div class="h-48 bg-gray-800 relative">
+                    <img src="assets/talk2.jpg" alt="Microsoft Event" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                </div>
+                <div class="p-5">
+                    <div class="text-xs font-bold text-emerald-400 uppercase mb-2">Keynote</div>
+                    <h3 class="text-lg font-bold text-white leading-tight">Microsoft: Leading the Era of AI</h3>
+                    <p class="text-sm text-muted mt-2">Redefining enterprise data strategy with Azure OpenAI.</p>
+                </div>
+            </a>
+
+            <a href="LINK_TO_POST" target="_blank" class="flex-none w-[350px] snap-center glass-card rounded-xl overflow-hidden group">
+                <div class="h-48 bg-gray-800 relative">
+                    <img src="assets/talk3.jpg" alt="Panel" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                </div>
+                <div class="p-5">
+                    <div class="text-xs font-bold text-purple-400 uppercase mb-2">Panel</div>
+                    <h3 class="text-lg font-bold text-white leading-tight">CIO Perspective: ChatGPT</h3>
+                    <p class="text-sm text-muted mt-2">Discussion with seasoned CXOs on Organizational AI.</p>
+                </div>
+            </a>
+
+             <a href="#" class="flex-none w-[350px] snap-center glass-card rounded-xl overflow-hidden group">
+                <div class="h-48 bg-gray-800 relative flex items-center justify-center">
+                    <i class="fa-solid fa-microphone text-4xl text-white/20"></i>
+                </div>
+                <div class="p-5">
+                    <div class="text-xs font-bold text-blue-400 uppercase mb-2">Summit</div>
+                    <h3 class="text-lg font-bold text-white leading-tight">BFSI Leadership Meet</h3>
+                    <p class="text-sm text-muted mt-2">Re-imagining Intelligent Automation for Banking.</p>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+
+    <section id="insights" class="max-w-6xl mx-auto px-6 mb-32">
+        <div class="flex items-end justify-between mb-8">
+            <h2 class="text-3xl font-bold text-white border-l-4 border-white pl-4">The AI Grid</h2>
+            <span class="text-sm text-muted">Selected Writing</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[minmax(180px,auto)]">
+            
+            <a href="LINK_TO_LINKEDIN_POST" class="glass-card p-8 rounded-xl md:col-span-2 md:row-span-2 flex flex-col justify-between group">
+                <div>
+                    <div class="text-accent text-sm font-bold mb-3 tracking-wide">FEATURED ANALYSIS</div>
+                    <h3 class="text-3xl font-bold text-white mb-4 leading-tight group-hover:text-accent transition">RPA ghosts haunting AI pilots?</h3>
+                    <p class="text-muted text-lg leading-relaxed">
+                        80% of AI pilots fail to scale. It's the same pattern we saw in 2017. Here are the 6 structural fixes CIOs need to implement.
+                    </p>
+                </div>
+                <div class="mt-8 flex items-center text-white font-medium">
+                    Read on LinkedIn <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                </div>
+            </a>
+
+            <a href="LINK_TO_POST" class="glass-card p-6 rounded-xl md:col-span-2 group">
+                <div class="text-emerald-400 text-xs font-bold mb-2">STRATEGY</div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition">The Vertical AI Shift</h3>
+                <p class="text-muted text-sm">Why the market is moving from horizontal platforms to vertical agents in regulated industries.</p>
+            </a>
+
+            <a href="LINK_TO_POST" class="glass-card p-6 rounded-xl md:col-span-1 group">
+                <div class="text-blue-400 text-xs font-bold mb-2">THOUGHTS</div>
+                <h3 class="text-lg font-bold text-white mb-2">Automation Waves</h3>
+                <p class="text-muted text-xs">How to break the pattern of failure.</p>
+            </a>
+
+            <a href="LINK_TO_MEDIUM" class="glass-card p-6 rounded-xl md:col-span-1 group">
+                <div class="text-white/50 text-xs font-bold mb-2">ARCHIVE</div>
+                <h3 class="text-lg font-bold text-white mb-2">Early Writings</h3>
+                <p class="text-muted text-xs">Reflections on the Medium platform.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <footer class="max-w-6xl mx-auto px-6 py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-muted text-sm">
+        <p>&copy; 2026 Vikas Anand. Own the Grid.</p>
+        <div class="flex gap-6 mt-4 md:mt-0">
+            <a href="https://twitter.com/_ivik" class="hover:text-white transition flex items-center gap-2">X (Twitter)</a>
+            <a href="https://linkedin.com/in/vikas-anand" class="hover:text-white transition flex items-center gap-2">LinkedIn</a>
+            <a href="mailto:sakivva@gmail.com" class="hover:text-white transition">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        function scrollCarousel(direction) {
+            const container = document.getElementById('carousel');
+            const scrollAmount = 370;
+            container.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
